@@ -103,4 +103,7 @@
     <!-- Pie -->
     <string name="pie_pd">Pie</string>
 
+    <!-- Themes settings -->
+    <string name="themes_settings_title">Themes</string>
+
 </resources>

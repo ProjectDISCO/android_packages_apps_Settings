@@ -16,4 +16,10 @@
         android:entryValues="@array/navigation_bar_height_values"
         android:defaultValue="48"
         android:persistent="false" />
+
+    <com.android.settings.disco.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_navbar"
+        android:title="@string/double_tap_sleep_nav_bar_title"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

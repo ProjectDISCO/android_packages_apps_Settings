@@ -89,4 +89,7 @@
     <string name="battery_percent_always">Always</string>
     <string name="battery_percent_expanded">Expanded</string>
 
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Double tap on navbar to sleep</string>
+
 </resources>

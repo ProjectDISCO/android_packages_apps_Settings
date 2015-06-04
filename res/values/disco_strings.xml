@@ -92,4 +92,8 @@
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Double tap on navbar to sleep</string>
 
+    <!-- Navbar cursor buttons -->
+    <string name="show_ime_arrows_title">Show arrow keys while typing</string>
+    <string name="show_ime_arrows_summary">Display left and right cursor buttons for IME</string>
+
 </resources>

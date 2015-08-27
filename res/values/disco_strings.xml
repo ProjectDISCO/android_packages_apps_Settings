@@ -77,14 +77,4 @@
     <!-- Adaptive brightness toggle -->
     <string name="adaptive_brightness_toggle">Show adaptive brightness toggle</string>
 
-    <!-- Navigation bar style configuration -->
-    <string name="navigation_bar_style_title">Navigation bar style</string>
-    <string name="navigation_bar_style_summary_stock">Show Google\'s stock bar</string>
-    <string name="navigation_bar_style_summary_immersive">Automatically hide Google\'s stock bar</string>
-
-    <!-- Status bar style configuration -->
-    <string name="status_bar_style_title">Status bar style</string>
-    <string name="status_bar_style_summary_stock">Show Google\'s stock bar</string>
-    <string name="status_bar_style_summary_immersive">Automatically hide Google\'s stock bar</string>
-
 </resources>

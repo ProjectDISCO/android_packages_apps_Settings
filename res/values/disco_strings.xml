@@ -67,6 +67,7 @@
     <string name="recents_panel_settings">Recents panel</string>
     <string name="pd_sound_settings">Sound</string>
     <string name="statusbar_settings_pd">Status bar</string>
+    <string name="misc_settings_pd">Miscellaneous</string>
 
     <!-- Adaptive brightness toggle -->
     <string name="adaptive_brightness_toggle">Show adaptive brightness toggle</string>
@@ -95,5 +96,8 @@
     <!-- Navbar cursor buttons -->
     <string name="show_ime_arrows_title">Show arrow keys while typing</string>
     <string name="show_ime_arrows_summary">Display left and right cursor buttons for IME</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Show icon of app associated with toast</string>
 
 </resources>

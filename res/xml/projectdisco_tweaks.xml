@@ -48,4 +48,9 @@
         android:fragment="com.android.settings.disco.SoundSettings"
         android:title="@string/pd_sound_settings" />
 
+     <PreferenceScreen
+        android:id="@+id/pd_misc_settings"
+        android:fragment="com.android.settings.disco.MiscSettings"
+        android:title="@string/misc_settings_pd" />
+
 </PreferenceScreen>

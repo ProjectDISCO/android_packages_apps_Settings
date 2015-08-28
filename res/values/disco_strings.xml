@@ -34,13 +34,6 @@
     <string name="none_is_silent_title">None is Silent mode</string>
     <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
 
-    <!--Battery Icon selection-->
-    <string name="battery_status_icon_title">Status icon</string>
-    <string name="battery_bar">Battery bar</string>
-    <string name="battery_circle">Battery circle</string>
-    <string name="battery_percent">Battery percent</string>
-    <string name="battery_hidden">Battery hidden</string>
-
     <!-- Navigation Bar -->
     <string name="navigation_bar_title">Navigation bar</string>
 

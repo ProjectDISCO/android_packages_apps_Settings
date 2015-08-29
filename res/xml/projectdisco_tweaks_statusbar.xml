@@ -22,4 +22,18 @@
     <com.android.settings.notification.DropDownPreference 
 	android:key="status_bar_style"
 	android:title="@string/status_bar_style_title" />
+
+    <ListPreference
+        android:key="statusbar_battery_style"
+        android:title="@string/battery_style_title"
+        android:entries="@*android:array/entries_battery_styles"
+        android:entryValues="@*android:array/values_battery_styles"
+        android:persistent="false"/>
+
+    <ListPreference
+        android:key="statusbar_battery_percent"
+        android:title="@string/battery_percent_title"
+        android:entries="@array/entries_battery_percent"
+        android:entryValues="@array/values_battery_percent"
+        android:persistent="false"/>
 </PreferenceScreen>

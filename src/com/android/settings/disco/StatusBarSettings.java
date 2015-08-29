@@ -1,35 +1,57 @@
 /*
- * Copyright (C) 2015 ParanoidAndroid
- * Copyright (C) 2015 Rastapop
+ *  Parts Copyright (C) 2015 The OmniROM Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
  */
 
 package com.android.settings.disco;
 
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.preference.ListPreference;
+import android.preference.Preference;
+import android.preference.PreferenceGroup;
+import android.preference.PreferenceScreen;
+import android.preference.PreferenceCategory;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.notification.DropDownPreference;
 import com.android.settings.notification.DropDownPreference.Callback;
+import com.android.settings.Utils;
+import java.util.List;
+import java.util.ArrayList;
 
 import static android.provider.Settings.System.SYSTEM_DESIGN_FLAGS;
 import static android.view.View.SYSTEM_DESIGN_FLAG_IMMERSIVE_STATUS;
 
-public class StatusBarSettings extends SettingsPreferenceFragment {
+public class StatusBarSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
+
+    private static final String TAG = "StatusBarSettings";
 
     private static final String KEY_STATUS_BAR_STYLE = "status_bar_style";
+    private static final String STATUSBAR_BATTERY_STYLE = "statusbar_battery_style";
+    private static final String STATUSBAR_BATTERY_PERCENT = "statusbar_battery_percent";
+
+    private ListPreference mBatteryStyle;
+    private ListPreference mBatteryPercent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,5 +100,47 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
         }
         statusBarStyle.setCallback(styleCallback);
 
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mBatteryStyle = (ListPreference) findPreference(STATUSBAR_BATTERY_STYLE);
+        int batteryStyle = Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_BATTERY_STYLE, 0);
+
+        mBatteryStyle.setValue(Integer.toString(batteryStyle));
+        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
+        mBatteryStyle.setOnPreferenceChangeListener(this);
+
+        mBatteryPercent = (ListPreference) findPreference(STATUSBAR_BATTERY_PERCENT);
+        int batteryPercent = Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_BATTERY_PERCENT, 2);
+
+        mBatteryPercent.setValue(Integer.toString(batteryPercent));
+        mBatteryPercent.setSummary(mBatteryPercent.getEntry());
+        mBatteryPercent.setOnPreferenceChangeListener(this);
+
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        // If we didn't handle it, let preferences handle it.
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mBatteryStyle) {
+            int value = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUSBAR_BATTERY_STYLE, value);
+        } else if (preference == mBatteryPercent) {
+            int value = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUSBAR_BATTERY_PERCENT, value);
+        }
+
+        return true;
     }
 }

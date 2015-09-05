@@ -100,4 +100,7 @@
     <!-- Toast Icons -->
     <string name="toast_icon_title">Show icon of app associated with toast</string>
 
+    <!-- Pie -->
+    <string name="pie_pd">Pie</string>
+
 </resources>

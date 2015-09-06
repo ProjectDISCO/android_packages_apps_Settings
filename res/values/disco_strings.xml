@@ -74,13 +74,13 @@
 
     <!-- Navigation bar style configuration -->
     <string name="navigation_bar_style_title">Navigation bar style</string>
-    <string name="navigation_bar_style_summary_stock">Show Google\'s stock bar</string>
-    <string name="navigation_bar_style_summary_immersive">Automatically hide Google\'s stock bar</string>
+    <string name="navigation_bar_style_summary_stock">Stock</string>
+    <string name="navigation_bar_style_summary_immersive">Immersive</string>
 
     <!-- Status bar style configuration -->
     <string name="status_bar_style_title">Status bar style</string>
-    <string name="status_bar_style_summary_stock">Show Google\'s stock bar</string>
-    <string name="status_bar_style_summary_immersive">Automatically hide Google\'s stock bar</string>
+    <string name="status_bar_style_summary_stock">Stock</string>
+    <string name="status_bar_style_summary_immersive">Immersive</string>
 
     <!-- Battery styles -->
     <string name="battery_title">Status bar battery</string>
@@ -98,7 +98,7 @@
     <string name="show_ime_arrows_summary">Display left and right cursor buttons for IME</string>
 
     <!-- Toast Icons -->
-    <string name="toast_icon_title">Show icon of app associated with toast</string>
+    <string name="toast_icon_title">Show app icon in toast</string>
 
     <!-- Pie -->
     <string name="pie_pd">Pie</string>

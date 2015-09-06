@@ -103,4 +103,7 @@
     <!-- Pie -->
     <string name="pie_pd">Pie</string>
 
+    <!-- Kill app back button -->
+    <string name="kill_app_longpress_back">Long-press back button to kill app</string>
+
 </resources>

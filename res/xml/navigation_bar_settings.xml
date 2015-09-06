@@ -33,6 +33,12 @@
 	android:dependency="pie_state" />
 
     <com.android.settings.disco.SystemSettingSwitchPreference
+        android:key="kill_app_longpress_back"
+        android:title="@string/kill_app_longpress_back"
+        android:defaultValue="false"
+	android:dependency="pie_state" />
+
+    <com.android.settings.disco.SystemSettingSwitchPreference
         android:key="pie_state"
         android:title="@string/pie_pd"
         android:defaultValue="false"

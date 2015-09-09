@@ -2078,7 +2078,7 @@
                        android:resource="@id/wireless_settings" />
         </activity>
 
-	<activity android:name=".disco.ProjectDiscoTweaks" />
+	<activity android:name=".disco.fragments.ProjectDiscoExtras" />
 
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"

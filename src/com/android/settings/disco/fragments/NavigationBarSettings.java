@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2015 ParanoidAndroid
- * Copyright (C) 2015 Rastapop
+ * Copyright (C) 2015 ProjectDisco
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.disco;
+package com.android.settings.disco.fragments;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
@@ -42,7 +41,7 @@ OnPreferenceChangeListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.navigation_bar_settings);
+        addPreferencesFromResource(R.xml.projectdisco_extras_navigation_bar);
 
         mNavigationBarHeight = (ListPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
         mNavigationBarHeight.setOnPreferenceChangeListener(this);

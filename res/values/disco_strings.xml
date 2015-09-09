@@ -62,8 +62,8 @@
     <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
-    <!-- ProjectDisco Tweaks -->
-    <string name="projectdisco_tweaks_string">ProjectDisco tweaks</string>
+    <!-- ProjectDisco extras -->
+    <string name="projectdisco_extras_string">ProjectDisco extras</string>
     <string name="recents_panel_settings">Recents panel</string>
     <string name="pd_sound_settings">Sound</string>
     <string name="statusbar_settings_pd">Status bar</string>
@@ -102,8 +102,5 @@
 
     <!-- Pie -->
     <string name="pie_pd">Pie</string>
-
-    <!-- Kill app back button -->
-    <string name="kill_app_longpress_back">Long-press back button to kill app</string>
 
 </resources>

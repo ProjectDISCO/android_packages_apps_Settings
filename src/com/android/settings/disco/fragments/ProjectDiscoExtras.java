@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The ProjectDisco Open Source Project
+ * Copyright (C) 2015 ProjectDisco
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.android.settings.disco;
+package com.android.settings.disco.fragments;
 
 import android.os.Bundle;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
-public class SoundSettings extends SettingsPreferenceFragment {
+public class ProjectDiscoExtras extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.projectdisco_tweaks_sound);
+        addPreferencesFromResource(R.xml.projectdisco_extras);
     }
 }

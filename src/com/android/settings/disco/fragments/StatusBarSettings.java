@@ -1,5 +1,5 @@
 /*
- *  Parts Copyright (C) 2015 The OmniROM Project
+ *  Copyright (C) 2015 The OmniROM Project
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
  *
  */
 
-package com.android.settings.disco;
+package com.android.settings.disco.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -57,7 +57,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.projectdisco_tweaks_statusbar);
+        addPreferencesFromResource(R.xml.projectdisco_extras_statusbar);
 
         final DropDownPreference.Callback styleCallback = new DropDownPreference.Callback() {
 
@@ -133,10 +133,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mBatteryStyle) {
             int value = Integer.valueOf((String) newValue);
+            int index = mBatteryStyle.findIndexOfValue((String) newValue);
+            mBatteryStyle.setSummary(
+                    mBatteryStyle.getEntries()[index]);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_STYLE, value);
         } else if (preference == mBatteryPercent) {
             int value = Integer.valueOf((String) newValue);
+            int index = mBatteryPercent.findIndexOfValue((String) newValue);
+            mBatteryPercent.setSummary(
+                    mBatteryPercent.getEntries()[index]);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUSBAR_BATTERY_PERCENT, value);
         }

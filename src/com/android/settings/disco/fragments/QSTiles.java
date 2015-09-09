@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.cyanogenmod.qs;
+package com.android.settings.disco.fragments;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -34,6 +34,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.internal.util.cm.QSUtils;
+import com.android.settings.disco.qs.DraggableGridView;
+import com.android.settings.disco.qs.QSTileHolder;
+import com.android.settings.disco.qs.QSListAdapter;
 import com.android.settings.R;
 import com.android.settings.Utils;
 

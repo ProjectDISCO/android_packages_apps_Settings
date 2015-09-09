@@ -76,12 +76,12 @@
             android:id="@+id/device_section"
             android:title="@string/header_category_device" >
 
-        <!-- ProjectDisco Tweaks -->
+        <!-- ProjectDisco Extras -->
         <dashboard-tile
-                android:id="@+id/projectdisco_tweaks_dashboard_tile"
-                android:title="@string/projectdisco_tweaks_string"
-                android:fragment="com.android.settings.disco.ProjectDiscoTweaks"
-		android:icon="@drawable/ic_projectdisco_tweaks"
+                android:id="@+id/projectdisco_extras_dashboard_tile"
+                android:title="@string/projectdisco_extras_string"
+                android:fragment="com.android.settings.disco.fragments.ProjectDiscoExtras"
+		android:icon="@drawable/ic_projectdisco_extras"
                 />
 
         <!-- Home -->

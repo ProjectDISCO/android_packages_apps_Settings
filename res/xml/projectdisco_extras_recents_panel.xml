@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 The CyanogenMod Project
+<!-- Copyright (C) 2015 ProjectDisco
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,11 +16,13 @@
 <PreferenceScreen
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/pd_sound_settings">
+	android:title="@string/recents_panel_settings">
 
-    <!-- None to Silent mode -->
-    <com.android.settings.disco.SystemSettingSwitchPreference
-        android:key="none_is_silent"
-        android:title="@string/none_is_silent_title"
-        android:summary="@string/none_is_silent_summary" />
+         <com.android.settings.disco.SystemSettingSwitchPreference
+		android:key="recents_show_hide_search_bar"
+		android:title="@string/recents_show_searchbar"
+		android:summary="@string/recents_show_searchbar_summary"
+		settings:keywords="@string/keywords_recents_show_searchbar"
+                android:defaultValue="true" />
+
 </PreferenceScreen>

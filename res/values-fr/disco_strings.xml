@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- ProjectDisco version -->
+    <string name="mod_version">Version ProjectDisco </string>
+    <string name="mod_version_default">Inconnue</string>
+
+    <!-- Show/Hide Search Bar -->
+    <string name="recents_show_searchbar">Désactiver la barre de recherche dans les récents</string>
+    <string name="recents_show_searchbar_summary">Désactiver ou activer la barre de recherche dans les récents</string>
+
+    <!-- Keywords -->
+    <string name="keywords_recents_show_searchbar">récent récents désactiver recherche barre barre de recherche caché</string>
+
+    <!-- Notification drawer and QS -->
+    <string name="notification_drawer_title">Tiroir de notification et volet des paramètres</string>
+    <string name="qs_category_title">Volet des paramètres</string>
+    <string name="qs_order_title">Sélectionner et organiser les raccourcis</string>
+    <string name="add_qs">Ajouter un raccourci</string>
+    <string name="cast_screen">Caster l\'écran</string>
+    <string name="hotspot">Partage de connexion</string>
+    <string name="qs_action_delete">Supprimer</string>
+    <string name="qs_action_add">Ajouter</string>
+    <string name="qs_action_no_more_tiles">Plus de raccourcis disponible</string>
+    <string name="qs_main_tiles_title">Agrandir la première ligne</string>
+    <string name="qs_main_tiles_summary_on">Deux raccourcis sur la première ligne</string>
+    <string name="qs_main_tiles_summary_off">Trois raccourcis par ligne</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_title">Barre d\'état</string>
+
+    <!-- Misc -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="none_is_silent_title">Aucun est le mode silence</string>
+    <string name="none_is_silent_summary">Le mode silence joue toujours les alarmes</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_title">Barre de naviguation</string>
+
+    <!-- Navigation Bar Height -->
+    <string name="navigation_bar_height">Dimensions de la barre de naviguation</string>
+    <string name="navigation_bar_height_56">56dp</string>
+    <string name="navigation_bar_height_54">54dp</string>
+    <string name="navigation_bar_height_52">52dp</string>
+    <string name="navigation_bar_height_50">50dp</string>
+    <string name="navigation_bar_height_48">48dp (défaut)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">0dp (caché)</string>
+
+    <!--  Volume rocker -->
+    <string name="volume_rocker_screen_title">Bascule du volume</string>
+
+    <!--- Volume key cursor control -->
+    <string name="volume_key_cursor_control_title">Commande par le volume du curseur</string>
+    <string name="volume_key_cursor_control_off">Désactiver</string>
+    <string name="volume_key_cursor_control_on">Volume haut/bas déplace le curseur à gauche/droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume bas/haut déplace le curseur à droite/gauche</string>
+
+    <!-- ProjectDisco extras -->
+    <string name="projectdisco_extras_string">ProjectDisco divers</string>
+    <string name="recents_panel_settings">Applications récentes</string>
+    <string name="pd_sound_settings">Son</string>
+    <string name="statusbar_settings_pd">Barre d\'état</string>
+    <string name="misc_settings_pd">Divers</string>
+
+    <!-- Adaptive brightness toggle -->
+    <string name="adaptive_brightness_toggle">Afficher la bascule de l\'adaptation de la luminosité</string>
+
+    <!-- Navigation bar style configuration -->
+    <string name="navigation_bar_style_title">Style de la barre de naviguation</string>
+    <string name="navigation_bar_style_summary_stock">Stock</string>
+    <string name="navigation_bar_style_summary_immersive">Immersif</string>
+
+    <!-- Status bar style configuration -->
+    <string name="status_bar_style_title">Style de la barre de statut</string>
+    <string name="status_bar_style_summary_stock">Stock</string>
+    <string name="status_bar_style_summary_immersive">Immersif</string>
+
+    <!-- Battery styles -->
+    <string name="battery_title">Batterie de la barre de statut</string>
+    <string name="battery_style_title">Style de la batterie</string>
+    <string name="battery_percent_title">Afficher le pourcentage</string>
+    <string name="battery_percent_none">Jamais</string>
+    <string name="battery_percent_always">Toujours</string>
+    <string name="battery_percent_expanded">Etendu</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Veille par double appui</string>
+
+    <!-- Navbar cursor buttons -->
+    <string name="show_ime_arrows_title">Afficher les touches de direction</string>
+    <string name="show_ime_arrows_summary">Afficher les boutons droite et gauche des touches de direction dans la barre de naviguation</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Afficher l\'îcone de l\'application correspondante dans la notification Toast</string>
+
+    <!-- Pie -->
+    <string name="pie_pd">Pie</string>
+
+    <!-- Themes settings -->
+    <string name="themes_settings_title">Thèmes</string>
+
+</resources>

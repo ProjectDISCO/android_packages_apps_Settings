@@ -64,6 +64,12 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
+        <!-- ProjectDisco version -->
+        <Preference android:key="disco_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/disco_version"
+                android:summary="@string/disco_version_default" />
+
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 android:enabled="false"

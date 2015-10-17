@@ -5,4 +5,7 @@
     <string name="disco_version">ProjectDisco version</string>
     <string name="disco_version_default">Unknown</string>
 
+    <!-- ProjectDisco extras -->
+    <string name="projectdisco_extras_title">ProjectDisco extras</string>
+
 </resources>

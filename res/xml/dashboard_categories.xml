@@ -78,6 +78,14 @@
             android:key="@string/category_key_device"
             android:title="@string/header_category_device" >
 
+        <!-- ProjectDisco Extras -->
+        <dashboard-tile
+                android:id="@+id/projectdisco_extras_dashboard_tile"
+                android:title="@string/projectdisco_extras_title"
+                android:fragment="com.android.settings.disco.fragments.ProjectDiscoExtras"
+		android:icon="@drawable/ic_projectdisco_extras"
+                />
+
         <!-- Home -->
         <dashboard-tile
                 android:id="@+id/home_settings"

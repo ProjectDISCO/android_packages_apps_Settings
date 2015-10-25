@@ -18,10 +18,14 @@
 	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
 	android:title="@string/projectdisco_extras_title">
 
-    <!-- Navigation bar preferences -->
-    <PreferenceScreen
-	android:key="pd_navigation_bar_preferences"
-	android:fragment="com.android.settings.disco.fragments.NavigationBarPreferences"
-	android:title="@string/navigation_bar_title" />
+    <!-- Navigation bar height -->
+    <ListPreference
+        android:key="pd_navigation_bar_height_preference"
+        android:dialogTitle="@string/navigation_bar_height"
+        android:title="@string/navigation_bar_height"
+        android:entries="@array/navigation_bar_height_entries"
+        android:entryValues="@array/navigation_bar_height_values"
+        android:defaultValue="48"
+        android:persistent="false" />
 
 </PreferenceScreen>
